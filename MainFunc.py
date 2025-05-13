@@ -255,6 +255,4 @@ def easter():
     pyautogui.click(716, 329)
     time.sleep(0.5)
 
-while(True):
-    easter()
 
