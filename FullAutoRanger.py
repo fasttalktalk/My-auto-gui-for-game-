@@ -13,3 +13,4 @@ def fullauto():
             wait_seconds = (next_hour - now).total_seconds()
             print(f"รอจนถึงเวลา {next_hour} (อีก {wait_seconds:.0f} วินาที)")
             time.sleep(wait_seconds)
+            pyautogui.click(1,2)

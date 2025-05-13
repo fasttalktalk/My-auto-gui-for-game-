@@ -1,8 +1,5 @@
 import pyautogui
-import pyscreeze
 import time
-import cv2
-import numpy as np
 from datetime import datetime, timedelta
 import sys
 a = pyautogui.position()
@@ -254,5 +251,4 @@ def easter():
     time.sleep(0.5)
     pyautogui.click(716, 329)
     time.sleep(0.5)
-
 
