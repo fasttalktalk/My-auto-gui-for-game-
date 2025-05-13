@@ -1,9 +1,10 @@
 import pyautogui
 import time
 from datetime import datetime, timedelta
+from rangerstage import *
 
 def fullauto():
-    while True:
+    #while True:
         now = datetime.now()
 
         # รอจนถึง .00
@@ -12,4 +13,6 @@ def fullauto():
             wait_seconds = (next_hour - now).total_seconds()
             print(f"รอจนถึงเวลา {next_hour} (อีก {wait_seconds:.0f} วินาที)")
             time.sleep(wait_seconds)
+            rangerstage()
+            
 fullauto()
