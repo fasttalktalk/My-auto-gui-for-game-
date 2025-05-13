@@ -1,6 +1,31 @@
 from MainFunc import run_for_minutes
 import pyautogui
 import time
+def out():
+        # ⏳ Countdown 60 วินาทีก่อนเริ่มคลิก
+    wait_time = 60
+    print(f"⏱️ กำลังรอ {wait_time} วินาทีก่อนออก")
+    for i in range(wait_time, 0, -1):
+        print(f"⏳ ออกจากในอีก {i} วินาที", end='\r')
+        time.sleep(1)
+    print()
+
+    # 🖱️ คลิกตำแหน่งต่าง ๆ
+    for _ in range(5):
+        pyautogui.click(391, 342)
+        time.sleep(1)
+
+    pyautogui.click(422, 452)
+    time.sleep(1)
+    pyautogui.click(422, 452)
+
+    # ⏳ Countdown 15 วินาทีหลังสุด
+    final_wait = 20
+    print(f"🕒 รอ {final_wait} วินาทีก่อนจบขั้นตอน out()")
+    for i in range(final_wait, 0, -1):
+        print(f"⏳ เหลืออีก {i} วินาที...", end='\r')
+        time.sleep(1)
+    print("\n✅ ขั้นตอน out() เสร็จเรียบร้อยแล้ว")
 def entervoocha():
     time.sleep(1)
     pyautogui.click(379, 345) #หน้าจอ
