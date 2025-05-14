@@ -11,12 +11,12 @@ def fullauto():
 
         # หานาทีถัดไปที่เป็น 15 หรือ 45
         if minute < 15:
-            next_run = now.replace(minute=15, second=0, microsecond=0)
+            next_run = now.replace(minute=16, second=0, microsecond=0)
         elif minute < 45:
-            next_run = now.replace(minute=45, second=0, microsecond=0)
+            next_run = now.replace(minute=46, second=0, microsecond=0)
         else:
             # ข้ามไปชั่วโมงถัดไป นาทีที่ 15
-            next_run = (now + timedelta(hours=1)).replace(minute=15, second=0, microsecond=0)
+            next_run = (now + timedelta(hours=1)).replace(minute=16, second=0, microsecond=0)
 
         wait_seconds = int((next_run - now).total_seconds())
 
