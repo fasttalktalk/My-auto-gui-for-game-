@@ -1,5 +1,8 @@
 import pyautogui
+import pyscreeze
 import time
+import cv2
+import numpy as np
 from datetime import datetime, timedelta
 import sys
 a = pyautogui.position()
@@ -34,7 +37,7 @@ def out():
 def replay():
     pyautogui.click(413, 203)
     time.sleep(0.5)
-    pyautogui.click(277, 455)
+    pyautogui.click(260, 455)
     time.sleep(0.5)
 
 
@@ -251,6 +254,49 @@ def easter():
     time.sleep(0.5)
     pyautogui.click(716, 329)
     time.sleep(0.5)
-while(True):
-    easter()
+def replayghoul():
+    pyautogui.click(413, 203)
+    time.sleep(0.5)
+    pyautogui.click(283,462)
+    time.sleep(0.5)
+def run_for_minutes_ghoul(minutes):
+    total_seconds = int(minutes * 60)
+    end_time = datetime.now() + timedelta(seconds=total_seconds)
 
+    print(f"▶️ เริ่มทำงานเป็นเวลา {minutes} นาที ({total_seconds} วินาที)")
+    
+    while datetime.now() < end_time:
+        remaining = int((end_time - datetime.now()).total_seconds())
+        mins, secs = divmod(remaining, 60)
+        print(f"⏳ เหลือเวลา {mins:02d}:{secs:02d}", end='\r')
+
+        replayghoul()
+def rangerGhoul():
+    time.sleep(1)
+    pyautogui.click(398,72)
+    time.sleep(2)
+    pyautogui.click(75,367)
+    time.sleep(2)
+    pyautogui.click(17,283)
+    time.sleep(2)
+    pyautogui.click(433,543)
+    time.sleep(1)
+    pyautogui.moveTo(242,295)
+    time.sleep(1)
+    pyautogui.scroll(-200)
+    time.sleep(1)
+    pyautogui.click(235,426)
+    time.sleep(1)
+    pyautogui.click(406,246)
+    time.sleep(1)
+    pyautogui.click(481,466)
+    time.sleep(1)
+    pyautogui.click(400,526)
+    time.sleep(1)
+    pyautogui.click(552,253)
+    time.sleep(1)
+    run_for_minutes_ghoul(5)
+    time.sleep(1)
+    pass
+while(True):
+    replay()
