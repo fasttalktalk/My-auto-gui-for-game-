@@ -1,8 +1,5 @@
 import pyautogui
-import pyscreeze
 import time
-import cv2
-import numpy as np
 from datetime import datetime, timedelta
 import sys
 a = pyautogui.position()
@@ -297,6 +294,29 @@ def rangerGhoul():
     time.sleep(1)
     run_for_minutes_ghoul(5)
     time.sleep(1)
+    pass
+def infinitecastle():
+    pyautogui.click(413,203)
+    time.sleep(1)
+    for i in range(10):
+        pyautogui.click(721,255)
+        time.sleep(0.5)
+    pyautogui.click(284,466)
+    pass
+def rerollstats(slot):
+    if slot == 1:
+        pyautogui.click(524,258)
+    if slot == 2:
+        pyautogui.click(528,293)
+    if slot == 3:
+        pyautogui.click(541,322)
+    if slot == 4:
+        pyautogui.click(521,354)
+    if slot == 5:
+        pyautogui.click(535,383)
+    pass
+def reroll():
+    pyautogui.click(454,424)
     pass
 while(True):
     replay()
