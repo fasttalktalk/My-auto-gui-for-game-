@@ -318,5 +318,8 @@ def rerollstats(slot):
 def reroll():
     pyautogui.click(454,424)
     pass
+def alsreroll():
+    pyautogui.click(401,486)
+    pass
 while(True):
     replay()
