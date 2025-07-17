@@ -321,5 +321,36 @@ def reroll():
 def alsreroll():
     pyautogui.click(401,486)
     pass
+def summon():
+    pyautogui.click(516,426)
+    pass
+def bussrush():
+    pyautogui.click(294,581)
+    time.sleep(0.5)
+    pyautogui.click(471,492)
+    time.sleep(0.5)
+    pyautogui.click(335,581)
+    time.sleep(0.5)
+    pyautogui.click(471,492)
+    time.sleep(0.5)
+    pyautogui.click(378,592)
+    time.sleep(0.5)
+    pyautogui.click(471,492)
+    time.sleep(0.5)
+    pyautogui.click(429,595)
+    time.sleep(0.5)
+    pyautogui.click(471,492)
+    time.sleep(0.5)
+    pyautogui.click(481,594)
+    time.sleep(0.5)
+    pyautogui.click(471,492)
+    time.sleep(0.5)
+    pyautogui.click(524,591)
+    time.sleep(0.5)
+    pyautogui.click(471,492)
+    time.sleep(0.5)
+    pyautogui.click(278,452)
+    time.sleep(0.5)
+    passไ
 while(True):
     replay()
