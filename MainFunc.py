@@ -324,7 +324,7 @@ def alsreroll():
 def summon():
     pyautogui.click(516,426)
     pass
-def bussrush():
+def bossrush():
     pyautogui.click(294,581)
     time.sleep(0.5)
     pyautogui.click(471,492)
@@ -351,6 +351,15 @@ def bussrush():
     time.sleep(0.5)
     pyautogui.click(278,452)
     time.sleep(0.5)
-    passไ
+    pass
+def astdx_reroll():
+    pyautogui.click(530,466)
+    time.sleep(0.2)
+    pyautogui.click(540,506)
+    time.sleep(0.2)
+def rereoll_traite_astdx():
+    pyautogui.click(457,431)
+    pass
 while(True):
-    replay()
+    rereoll_traite_astdx()
+    pass
